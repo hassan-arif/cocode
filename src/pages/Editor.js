@@ -24,13 +24,13 @@ const Editor = () => {
                     <div className="logo">
                         <img
                             className="logoImage"
-                            src="/code-sync.png"
+                            src="/CoCode.png"
                             alt="logo"
                         />
                     </div>
-                    <br/>
+                    {/* <br/> */}
                     <h3>Connected</h3>
-                    <br/>
+                    {/* <br/> */}
                     <div className="clientsList">
                         {clients.map((client) => (
                             <Client
@@ -48,13 +48,7 @@ const Editor = () => {
                 </button>
             </div>
             <div className="editorWrap">
-                <MainContent
-                    // socketRef={socketRef}
-                    // roomId={roomId}
-                    // onCodeChange={(code) => {
-                    //     codeRef.current = code;
-                    // }}
-                />
+                <MainContent/>
             </div>
         </div>
     )
