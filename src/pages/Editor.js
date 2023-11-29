@@ -9,14 +9,6 @@ const Editor = () => {
         {socketId: 3, username: 'Hassan M'},
     ])
 
-    const copyRoomId = () => {
-
-    }
-
-    const leaveRoom = () => {
-
-    }
-
     return (
         <div className="mainWrap">
             <div className="aside">
@@ -28,9 +20,7 @@ const Editor = () => {
                             alt="logo"
                         />
                     </div>
-                    {/* <br/> */}
                     <h3>Connected</h3>
-                    {/* <br/> */}
                     <div className="clientsList">
                         {clients.map((client) => (
                             <Client
@@ -40,10 +30,10 @@ const Editor = () => {
                         ))}
                     </div>
                 </div>
-                <button className="btn copyBtn" onClick={copyRoomId}>
+                <button className="btn copyBtn">
                     Copy ROOM ID
                 </button>
-                <button className="btn leaveBtn" onClick={leaveRoom}>
+                <button className="btn leaveBtn">
                     Leave
                 </button>
             </div>

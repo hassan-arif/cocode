@@ -24,7 +24,8 @@ footer {
 
 /* to be used later for adding linkedin/github links */
 footer a {
-  color: #4aee88;
+  /* color: #4aee88; */
+  color: #fbde2d;
 }
 
 .inputGroup {
@@ -66,14 +67,16 @@ footer a {
 
 .joinBtn,
 .leaveBtn {
-  background: #4aed88;
+  /* background: #4aed88; */
+  background: #fbde2d;
   width: 100px;
   margin-left: auto;
 }
 
 .joinBtn:hover,
 .leaveBtn:hover {
-  background: #2b824c;
+  /* background: #2b824c; */
+  background: #b39d20;
 }
 
 /* create new room */
@@ -84,16 +87,20 @@ footer a {
 
 /* new room */
 .createNewBtn {
-  color: #4aed88;
+  /* color: #4aed88; */
+  color: #fbde2d;
   text-decoration: none;
-  border-bottom: 1px solid #4aed88;
+  /* border-bottom: 1px solid #4aed88; */
+  border-bottom: 1px solid #fbde2d;
   transition: all 0.3s ease-in-out;
 }
 
 .createNewBtn:hover,
 footer a:hover {
-  color: #368654;
-  border-color: #368654;
+  /* color: #368654;
+  border-color: #368654; */
+  color: #b39d20;
+  border-color: #b39d20;
 }
 
 /* ---------------EDITOR--------------- */
@@ -101,11 +108,15 @@ footer a:hover {
 .mainWrap {
   display: grid;
   grid-template-columns: 230px 1fr;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .aside {
-  background: #1c1e29;
+  /* background: #1c1e29; */
+  /* vs code */
+  background: #181818;
+  /* edge */
+  /* background: #2e2e2e; */
   padding: 16px;
   color: #fff;
   display: flex;
@@ -150,4 +161,4 @@ footer a:hover {
   font-size: 20px;
   line-height: 1.6;
   padding-top: 20px;
-}
+} 

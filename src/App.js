@@ -4,28 +4,32 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Editor from './pages/Editor';
 import { Toaster } from 'react-hot-toast';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <Auxiliary>
-      <div>
-        <Toaster
-          position='top-right'
-          toastOptions={{
-            success: {
-              theme: {
-                primary: '#4aed88'
+class  App extends Component {
+  render() {
+    return (
+      <Auxiliary>
+        <div>
+          <Toaster
+            position='top-right'
+            toastOptions={{
+              success: {
+                theme: {
+                  // primary: '#4aed88'
+                  primary: '#fbde2d'
+                }
               }
-            }
-          }}/>
-      </div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/editor/:roomID' element={<Editor/>}/>
-        </Routes>
-      </BrowserRouter>
-    </Auxiliary>
-  );
+            }}/>
+        </div>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/editor/:roomId' element={<Editor/>}/>
+          </Routes>
+        </BrowserRouter>
+      </Auxiliary>
+    );
+  }
 }
 export default App;

@@ -21,7 +21,7 @@ const Home = () => {
             return
         }
         // Redirect
-        navigate('/editor/${roomId}', {
+        navigate(`/editor/${roomId}`, {
             state: { username }
         })
     }
