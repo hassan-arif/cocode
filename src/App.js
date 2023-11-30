@@ -1,8 +1,8 @@
 import './App.css';
 import Auxiliary from '../src/hoc/Auxiliary'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Editor from './pages/Editor';
+import Home from './containers/Home';
+import Editor from './containers/Editor';
 import { Toaster } from 'react-hot-toast';
 import { Component } from 'react';
 
