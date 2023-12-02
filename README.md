@@ -71,8 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 -----------------------------------------
-npm install react-router-dom
-npm install uuid
-npm install react-hot-toast
-npm install react-avatar
-npm install codemirror
+npm install react-router-dom uuid react-hot-toast react-avatar codemirror
+npm install express socket.io socket.io-client
+npm install -D nodemon
+npm run server:dev
