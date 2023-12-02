@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <footer>
                 <h4>
-                    Developed by <a href="">Faizan Munir</a>, <a href="">Muneeb Sultan</a>, and <a href="">Hassan Mahmood</a>
+                    Developed by <a href="">Faizan Munir</a>, <a href="https://www.linkedin.com/in/muhammad-muneeb-sultan-350213183/">Muneeb Sultan</a>, and <a href="https://www.linkedin.com/in/ihassanmahmood/">Hassan Mahmood</a>
                 </h4>
             </footer>
         </div>
