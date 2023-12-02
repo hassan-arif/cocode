@@ -8,6 +8,7 @@ import ACTIONS from '../Actions'
 
 const Editor = () => {
     const socketRef = useRef(null) // prevents component rerendering
+    const codeRef = useRef(null)
     const location = useLocation()
     const { roomId } = useParams()
     const reactNavigator = useNavigate()
@@ -38,6 +39,10 @@ const Editor = () => {
                         console.log(`${username} joined`)
                     }
                     setClients(clients)
+                    socketRef.current.emit(ACTIONS.SYNC_CODE, {
+                        code: codeRef.current,
+                        socketId,
+                    })
                 }
             )
 
@@ -105,7 +110,13 @@ const Editor = () => {
                 </button>
             </div>
             <div className="editorWrap">
-                <MainContent socketRef={socketRef} roomId={roomId}/>
+                <MainContent
+                    socketRef={socketRef}
+                    roomId={roomId}
+                    onCodeChange={(code) => {
+                        codeRef.current = code
+                    }}
+                />
             </div>
         </div>
     )
