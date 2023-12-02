@@ -91,7 +91,7 @@ const Editor = () => {
                 </button>
             </div>
             <div className="editorWrap">
-                <MainContent/>
+                <MainContent socketRef={socketRef} roomId={roomId}/>
             </div>
         </div>
     )
