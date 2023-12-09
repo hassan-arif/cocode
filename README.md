@@ -1,77 +1,63 @@
-# Getting Started with Create React App
+<p align='center'>
+  <img src='public/CoCode.png' alt='logo' width='400px'/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Real-Time Code Editor with React, NodeJS, and WebSockets
 
-## Available Scripts
+This project demonstrates building a real-time code editor from scratch using React, NodeJS, and WebSockets. Users can collaborate on code in real-time within a shared room.
 
-In the project directory, you can run:
+## Features
+- Real-time collaborative code editing
+- Unique room IDs for private editing sessions
+- Toast notifications for user actions
+- Clean and customizable editor design
+- Server-side code synchronization
+- Copy room ID for sharing
+- User disconnect handling
+- Auto-sync on first load
+- Easy deployment
 
-### `npm start`
+## Technologies
+- Frontend => React
+- Backend => NodeJS
+- Real-time Communication => WebSockets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+```bash
+git clone https://github.com/hassan-arif/cocode.git
+cd cocode
+npm install # includes react-router-dom, uuid, react-hot-toast, react-avatar, codemirror, express, socket.io, socket.io-client
+npm start
+```
+Then open http://localhost:5000 in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+1. Create a new room or join an existing one using the room ID.
+2. Start writing code in the editor.
+3. Your changes will be synchronized with other users in real-time.
+4. Use the toast notifications to see user actions.
 
-### `npm test`
+## Screenshots
+These screenshots demonstrate three instances of the application running in different browser windows, showcasing the real-time synchronization feature:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
+<p align='center'>localhost:5000/
+  <img src='screenshots/home.png' alt='Home'/>
+</p>
 
-### `npm run build`
+### Editor Page
+<p align='center'>localhost:5000/editor/549caef8-ab43-4552-8603-e2a269c59c33
+  <img src='screenshots/editor-1.png' alt='Editor-1'/>
+  <br/>
+  <img src='screenshots/editor-2.png' alt='Editor-2'/>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As you can see, the code changes are instantly reflected across all users in real-time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
+This project is currently not set up for production deployment. However, you can follow standard NodeJS deployment practices to get it up and running.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request for any bug fixes or improvements.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
------------------------------------------
-npm install react-router-dom uuid react-hot-toast react-avatar codemirror
-npm install express socket.io socket.io-client
-npm install -D nodemon
-npm run server:dev
+Enjoy building and collaborating with this real-time code editor!
