@@ -2,9 +2,9 @@
   <img src='public/CoCode.png' alt='logo' width='400px'/>
 </p>
 
-# Real-Time Code Editor with React, NodeJS, and WebSockets
+# Real-Time Code Editor with React, NodeJS, WebSockets, and MongoDB
 
-This project demonstrates building a real-time code editor from scratch using React, NodeJS, and WebSockets. Users can collaborate on code in real-time within a shared room.
+This project demonstrates building a real-time code editor from scratch using React, NodeJS, and WebSockets. Users can collaborate on code in real-time within a shared room. Latest update includes local DB syncing for keeping codes across room id saved and accessible in future.
 
 ## Features
 - Real-time collaborative code editing
@@ -16,17 +16,19 @@ This project demonstrates building a real-time code editor from scratch using Re
 - User disconnect handling
 - Auto-sync on first load
 - Easy deployment
+- NEW: Local DB for RoomID and Code History
 
 ## Technologies
 - Frontend => React
 - Backend => NodeJS
 - Real-time Communication => WebSockets
+- NEW: Local DB => MongoDB
 
 ## Getting Started
 ```bash
 git clone https://github.com/hassan-arif/cocode.git
 cd cocode
-npm install # includes react-router-dom, uuid, react-hot-toast, react-avatar, codemirror, express, socket.io, socket.io-client
+npm install # includes react-router-dom, uuid, react-hot-toast, react-avatar, codemirror, express, socket.io, socket.io-client, mongodb mongoose
 npm start
 ```
 Then open http://localhost:5000 in your browser.
